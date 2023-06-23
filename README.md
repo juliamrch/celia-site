@@ -1,6 +1,12 @@
-# Astro Starter Kit: Portfolio
+# Astro Starter Kit Powered Portfolio
 
-```
+This is a very simple static site made with Astro for my friend Célia.
+
+If you want to use the same template for your portfolio, follow these instructions.
+
+## Build your own
+
+```shell
 npm create astro@latest -- --template portfolio
 ```
 
@@ -13,7 +19,7 @@ npm create astro@latest -- --template portfolio
 ![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
 
 
-## 🧞 Commands
+### 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
 
@@ -26,6 +32,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+### 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [the documentation](https://docs.astro.build) or jump into Astro's [Discord server](https://astro.build/chat).
