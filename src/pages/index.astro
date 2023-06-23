@@ -30,22 +30,22 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Moi, c'est Célia Bonalair"
+					tagline="Je fais de la gestion de projets dans de multiples domaines à Lyon et je me forme au marketing digital."
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill><Icon icon="pencil-line" size="1.33em" />Content Manager</Pill>
+						<Pill><Icon icon="graduation-cap" size="1.33em" />Formatrice</Pill>
+						<Pill><Icon icon="microphone-stage" size="1.33em" />Productrice</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Portait illustré de Célia Bonalair "
 					width="480"
 					height="620"
-					src="/assets/portrait.jpg"
+					src="/assets/celia-portrait.png"
 				/>
 			</header>
 
@@ -55,8 +55,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Productions</h3>
+					<p>Voici certaines de mes productions.</p>
 				</header>
 
 				<div class="gallery">
@@ -81,17 +81,20 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Organisations</h3>
 					<p>
-						I have been fortunate enough to recieve praise for my work in several publications. Take
-						a look below to learn more.
+						J'ai eu la chance de travailler et de monter en compétences dans différentes structures et organisations.
 					</p>
 				</header>
 
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
+							[ 
+								<a href="https://radiocanut.org">Radio Canut</a>,
+								<a href="https://www.centrelgbtilyon.org">Centre LGBT de Lyon</a>,
+								<a href="https://radiocanut.org">Actions Traitements</a>
+						].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
