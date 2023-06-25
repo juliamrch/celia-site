@@ -1,6 +1,6 @@
 # Astro Starter Kit Powered Portfolio
 
-This is a very simple static site made with Astro for my friend Célia.
+This is a very simple static site made with Astro for my friend [Célia](https://www.linkedin.com/in/célia-bonalair-869247250/).
 
 If you want to use the same template for your portfolio, follow these instructions.
 
