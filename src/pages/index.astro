@@ -11,12 +11,13 @@ import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Card from '../components/Card.astro';
 
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
 
-// Content Fetching: List four most recent work projects
+// Content Fetching: List four most recent projetsprojects
 const projects = (await getCollection('work'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
@@ -30,7 +31,7 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Moi, c'est Célia Bonalair"
+					title="Moi, c'est Célia"
 					tagline="Je fais de la gestion de projets dans de multiples domaines à Lyon et je me forme au marketing digital."
 					align="start"
 				>
@@ -51,23 +52,49 @@ const projects = (await getCollection('work'))
 
 			<Skills />
 		</div>
-
+       
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Productions</h3>
+					
+					<h3>Réalisations</h3>
 					<p>Voici certaines de mes productions.</p>
 				</header>
 
 				<div class="gallery">
+					
 					<Grid variant="offset">
-						{
-							projects.map((project) => (
-								<li>
-									<PortfolioPreview project={project} />
-								</li>
-							))
-						}
+						
+					  <Card 
+					    title="Trump et la Covid"
+					    image="../assets/qanon.jpeg"
+					    alt="alt"
+					    link="../assets/work/complotisme.pdf"
+					  ></Card>
+
+					  <Card 
+					    title="L'imaginaire du rêve américain"
+					    image="../assets/liberalisme.png"
+					    alt=""
+					    link="../assets/work/neo-liberalisme.pdf"
+					  ></Card>
+
+					  <Card 
+					    title="Histoire et esthétique de la photographie"
+					    image="../assets/photographie.png"
+					    alt="alt"
+					    link="../assets/work/photographie.pdf "
+					  ></Card>
+
+					  <Card 
+					    title="L'horreur derrière Candyman"
+					    image="../assets/candyman.jpeg"
+					    alt="alt"
+					    link="../assets/work/violence.pdf "
+					  ></Card>
+					
+
+						
 					</Grid>
 				</div>
 
