@@ -4,8 +4,9 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 import ContactCTA from '../components/ContactCTA.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
+import Blog from '../components/Blog.astro';
 import Hero from '../components/Hero.astro';
+import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Grid from '../components/Grid.astro';
 
 const projects = (await getCollection('work')).sort(
@@ -24,6 +25,16 @@ const projects = (await getCollection('work')).sort(
 				tagline="Voici mes derniers projets en cours ou passés"
 				align="start"
 			/>
+			<Grid variant="offset">
+				{
+					projects.map((project) => (
+						<li>
+							<Blog project={project} />
+						</li>
+					))
+				}
+			</Grid>
+
 			<Grid variant="offset">
 				{
 					projects.map((project) => (

@@ -1,38 +1,17 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import Grid from '../components/Grid.astro';
 
 interface Props {
-	project: CollectionEntry<'project'>;
+	project: CollectionEntry<'work'>;
 }
 
 const { data, slug } = Astro.props.project;
 ---
 
-<Grid variant="offset">
-	{
-	<a class="card" href="../assets/pdf/complotisme.pdf">
-	<span class="title">Trump et la Covid</span>
-	<img src= "../assets/qanon.jpeg" alt="alt" loading="lazy" decoding="async" />
-    </a>
-
-	<a class="card" href="../assets/pdf/neo-liberalisme.pdf">
-	<span class="title">L'imaginaire du rêve américain</span>
-	<img src= "../assets/liberalisme.png" alt="alt" loading="lazy" decoding="async" />
-    </a>
-
-	<a class="card" href="../assets/pdf/photographie.pdf">
-	<span class="title">Histoire et esthétique de la photographie</span>
-	<img src= "../assets/photographie.png" alt="alt" loading="lazy" decoding="async" />
-    </a>
-
-	<a class="card" href="../assets/pdf/photographie.pdf">
-	<span class="title">L'horreur derrière Candyman</span>
-	<img src= "../assets/candyman.jpeg" alt="alt" loading="lazy" decoding="async" />
-    </a>
-}
-</Grid>
-
+<a class="card" href={`/work/${slug}`}>
+	<span class="title">{data.title}</span>
+	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
+</a>
 
 <style>
 	.card {
