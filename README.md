@@ -10,13 +10,11 @@ If you want to use the same template for your portfolio, follow these instructio
 npm create astro@latest -- --template portfolio
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/portfolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/portfolio)
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/portfolio/devcontainer.json)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-![portfolio](https://user-images.githubusercontent.com/357379/210779178-a98f0fb7-6b1a-4068-894c-8e1403e26654.jpg)
+![portfolio](/public/assets/demo-site.png)
 
 
 ### 🧞 Commands
@@ -35,3 +33,45 @@ All commands are run from the root of the project, from a terminal:
 ### 👀 Want to learn more?
 
 Feel free to check [the documentation](https://docs.astro.build) or jump into Astro's [Discord server](https://astro.build/chat).
+
+## ✍️ How to write your stuff
+
+1. Create a new file in `src/content/work`
+2. Add this metadata at the top of your file and change the values
+   
+```yaml
+---
+title: Your-Title
+publishDate: yyyy-dd-mm
+img: /assets/your-image
+img_alt: alt text
+description: |
+  Description of the post
+tags:
+  - 
+  - 
+  - 
+
+draft: false
+---
+```
+### ✨ Add a banner image
+
+Upload all your images in `public/assets` and in `img:` add the path the following way: `img: /assets/your-image.extension`. 
+
+For example for `model.md`: `img: /assets/stock-3.jpg`. 
+
+### 👁️👄👁️ Add the blog post content
+
+Write in Markdown, the most amazing markup language. Find a full syntax guide [here](https://www.markdownguide.org).
+
+### 📸 Insert an image in your post content
+
+To add this image:
+![image example](public/assets/stock-4.jpg)
+
+I've written this code:
+
+`![image example](public/assets/stock-4.jpg)`
+
+Do the same! 💅
