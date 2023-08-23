@@ -12,6 +12,7 @@ import Grid from '../components/Grid.astro';
 const projects = (await getCollection('work')).sort(
 	(a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
 );
+
 ---
 
 <BaseLayout
@@ -32,18 +33,10 @@ const projects = (await getCollection('work')).sort(
 							<Blog project={project} />
 						</li>
 					))
+					
 				}
 			</Grid>
 
-			<Grid variant="offset">
-				{
-					projects.map((project) => (
-						<li>
-							<PortfolioPreview project={project} />
-						</li>
-					))
-				}
-			</Grid>
 		</main>
 		<ContactCTA />
 	</div>

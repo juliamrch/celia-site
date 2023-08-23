@@ -1,5 +1,5 @@
 ---
-title: Modèle d'article en Markdown
+title: Modèle d'article en Markdown dans /content/work
 publishDate: 2020-24-06 00:00:00
 img: /assets/stock-3.jpg
 img_alt: image décorative
@@ -10,5 +10,5 @@ tags:
   - Recherche
   - Organisation
 
-draft: true
+draft: false
 ---

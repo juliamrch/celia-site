@@ -1,10 +1,11 @@
 ---
-import { getCollection } from 'astro:content';
+
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Component Imports
+import ProjectLinks from '../components/ProjectLinks.astro';
 import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
@@ -16,9 +17,10 @@ import Card from '../components/Card.astro';
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
+import ProjectsLinks from '../components/ProjectLinks.astro';
 
 // Content Fetching: List four most recent projetsprojects
-const projects = (await getCollection('project'));
+
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
@@ -59,16 +61,12 @@ const projects = (await getCollection('project'));
 					<p>Voici certaines de mes productions.</p>
 				</header>
 
-				<div class="gallery">
+				<div class="gallery">					
+						
+						<li>
+							<ProjectLinks>
+						</li>						
 					
-						{
-							projects.map((project) => (
-								
-									<PortfolioPreview project={project} />
-								
-							))
-						}
-					</Grid>
 				</div>
 
 				<div class="cta">
