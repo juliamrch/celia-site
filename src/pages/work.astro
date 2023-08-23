@@ -6,7 +6,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ContactCTA from '../components/ContactCTA.astro';
 import Blog from '../components/Blog.astro';
 import Hero from '../components/Hero.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
+import ProjectLinks from '../components/ProjectLinks.astro';
 import Grid from '../components/Grid.astro';
 
 const projects = (await getCollection('work')).sort(
@@ -23,9 +23,11 @@ const projects = (await getCollection('work')).sort(
 		<main class="wrapper stack gap-8">
 			<Hero
 				title="Mes projets"
-				tagline="Voici mes derniers projets en cours ou passés"
+				tagline="Sur ce site, vous découvrirez une variété de contenus stimulants et inspirants "
 				align="start"
 			/>
+
+
 			<Grid variant="offset">
 				{
 					projects.map((project) => (
@@ -36,6 +38,14 @@ const projects = (await getCollection('work')).sort(
 					
 				}
 			</Grid>
+
+			<div class="gallery">					
+						
+				<li>
+					<ProjectLinks>
+				</li>						
+			
+		</div>
 
 		</main>
 		<ContactCTA />

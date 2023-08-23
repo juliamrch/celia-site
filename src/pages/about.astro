@@ -5,12 +5,12 @@ import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 ---
 
-<BaseLayout title="About | Célia Bonalair" description="About Célia Bonalair Lorem Ipsum">
+<BaseLayout title="À propos | Célia Bonalair" description="Qui est Célia Bonalair">
 	<div class="stack gap-20">
 		<main class="wrapper about">
 			<Hero
 				title="À propos"
-				tagline="Merci d'être venu faire un tour sur ma page. Voici plus de renseignements sur moi."
+				tagline="Bienvenue sur mon site personnel : Explorer l'Image et la Culture Moderne"
 			>
 				<img
 					width="1553"
@@ -19,28 +19,60 @@ import Hero from '../components/Hero.astro';
 					alt="Célia Bonalair à la Pride de Lyon 2023"
 				/>
 			</Hero>
+			
+			<section>
+				<div class="content">
+					<p>
+						Bonjour et bienvenue !
+						Je suis ravie de vous accueillir sur mon site personnel dédié à l'exploration passionnante
+						de l'image et de la culture moderne.
+					</p>
+				</div>
+			</section>
 
 			<section>
 				<h2 class="section-title">Qui suis-je ?</h2>
 				<div class="content">
 					<p>
-						Lorem ipsum dolor sit amet, <a href="https://astro.build/">Astro</a> makes people happy.
-						Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum
-						id venenatis a condimentum vitae. Dapibus ultrices in iaculis nunc. Arcu odio ut sem nulla
-						pharetra diam sit amet. Diam quis enim lobortis scelerisque fermentum dui faucibus in ornare.
+						 Permettez-moi de me présenter : je suis Célia Danielle ,
+						 une professionnelle de l'image dotée d'une solide formation 
+						 en sciences humaines. Mon objectif est de créer une connexion puissante 
+						 entre la pop culture contemporaine, le graphisme captivant 
+						 et le monde du marketing efficace.
 					</p>
+					<br>
 					<p>
-						Arcu dui vivamus arcu felis bibendum ut tristique et egestas. Eget gravida cum sociis
-						natoque penatibus. Cras fermentum odio eu feugiat pretium nibh. Proin nibh nisl
-						condimentum id venenatis. Porta nibh venenatis cras sed felis eget velit. Id diam vel
-						quam elementum pulvinar etiam non.
+						Je suis profondément convaincue que l'image est le langage universel 
+						de notre époque. Mes études approfondies en sciences humaines m'ont offert 
+						une perspective unique pour analyser et décoder les tendances et les 
+						comportements qui façonnent notre société moderne. Mon parcours académique 
+						m'a permis de saisir les subtilités de la culture populaire et de ses 
+						implications, tout en développant une sensibilité artistique aiguisée.
 					</p>
+					<br>
+					<h3 class="inner-title">Les Sciences  Humaines comme base d'analyse</h3>
+					<br>
 					<p>
-						Ultrices tincidunt arcu non sodales neque sodales ut. Sed enim ut sem viverra aliquet
-						eget sit amet. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra.
-						Viverra accumsan in nisl nisi scelerisque eu ultrices. In massa tempor nec feugiat nisl
-						pretium fusce.
+						Mon amour pour les sciences humaines m'a ouvert les yeux sur la richesse 
+						des interactions sociales, des dynamiques culturelles et des valeurs qui 
+						guident nos choix quotidiens. Mon expertise dans ce domaine me permet de 
+						jeter un regard éclairé sur la pop culture moderne, de décrypter les 
+						messages sous-jacents dans les médias et de saisir les motivations 
+						profondes qui animent les consommateurs d'aujourd'hui.
 					</p>
+					<br>
+					<h3 class="inner-title">✨ L'Art du Graphisme et du Marketing</h3>
+					<br>
+					<p>
+						Mon parcours dans le monde du graphisme a ajouté une dimension visuelle 
+						captivante à mon expertise. Je crois en la puissance de l'esthétique pour 
+						communiquer des idées complexes de manière visuellement attrayante. Mon 
+						approche artistique soignée et innovante se mêle harmonieusement à ma 
+						compréhension des sciences humaines, me permettant ainsi de créer des 
+						designs qui suscitent l'émotion, captivent l'attention et renforcent 
+						les messages marketing.
+					</p>
+					
 				</div>
 			</section>
 			<section>
@@ -104,6 +136,12 @@ import Hero from '../components/Hero.astro';
 	.section-title {
 		grid-column-start: 1;
 		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.inner-title {
+		grid-column-start: 1;
+		font-size: var(--text-l);
 		color: var(--gray-0);
 	}
 

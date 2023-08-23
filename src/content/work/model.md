@@ -10,7 +10,27 @@ tags:
   - Recherche
   - Organisation
 
-draft: false
+draft: true
 ---
 
-Voici un post.
+Voici du texte
+
+**Voici un texte en gras**
+
+_Voici un texte en italique_
+
+Voici une liste numérotée :
+
+1. item 1
+2. item 2
+
+Voici une autre liste à puces :
+
+- item 1
+- item 2
+
+## Voici un titre (h2)
+
+### Voici un sous-titre (h3)
+
+etc.
