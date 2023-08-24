@@ -9,12 +9,13 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 8080
   },
-  integrations: [mdx()],
-  
   markdown: {
     // Exclude all drafts in final build
-    drafts: false,
-  }
+    drafts: false
+  },
+  integrations: [mdx()],
+  
+  
   
 
 }

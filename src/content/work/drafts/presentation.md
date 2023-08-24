@@ -1,6 +1,6 @@
 ---
 title: Ce que vous trouverez sur ce site
-publishDate: 2020-24-06 00:00:00
+publishDate: '2020-24-06 00:00:00'
 img: /assets/stock-3.jpg
 img_alt: image décorative
 description: |
