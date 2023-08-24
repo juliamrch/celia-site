@@ -63,9 +63,9 @@ import ProjectsLinks from '../components/ProjectLinks.astro';
 
 				<div class="gallery">					
 						
-						<li>
+						<ul>
 							<ProjectLinks>
-						</li>						
+						</ul>						
 					
 				</div>
 
@@ -127,6 +127,9 @@ import ProjectsLinks from '../components/ProjectLinks.astro';
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
 	}
+
+
+
 
 	@media (min-width: 50em) {
 		.hero {
@@ -221,6 +224,7 @@ import ProjectsLinks from '../components/ProjectLinks.astro';
 
 		.gallery {
 			grid-area: gallery;
+			
 		}
 
 		.cta {
